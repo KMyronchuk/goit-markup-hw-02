@@ -2,16 +2,17 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --background-color:  #FFFFFF;
+    --button-accent-color: #FFFFFF;
 
 }
-body {background-color: #E5E5E5;
-color: #757575;
+body {background-color: var(--background-color);
 font-family: Roboto, sans-serif;
 }
 .list { list-style: none;
 }
 
- .logo {color: #212121;
+ .logo {color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -20,7 +21,7 @@ font-family: Roboto, sans-serif;
     text-decoration: none;
 }
 
- .logo-accent {color: #2196F3;}
+ .logo-accent {color: var(--accent-color);}
 
  .site-nav .link {color: var(--title-text-color);
         font-weight: 500;
@@ -57,7 +58,7 @@ font-family: Roboto, sans-serif;
     text-transform: uppercase;
 }
 
-.button {color: #FFFFFF ;
+.button {color: var(--button-accent-color) ;
     background-color: #2196F3;
     font-family: inherit;
     font-weight: 700;
@@ -73,8 +74,9 @@ font-family: Roboto, sans-serif;
 
 .button:hover,
 .button:focus {
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
+    color: var(--button-accent-color);
+    background-color: #188CE8;
+    border: 1px solid #000000;
 }
  
 .main, .footer {background-color: #2F303A;}
@@ -130,7 +132,6 @@ font-family: Roboto, sans-serif;
 .address {
     color: #FFFFFF;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -145,6 +146,7 @@ font-family: Roboto, sans-serif;
 .address-info:focus {color: var(--accent-color);}
 
 .button-secondary {color: var(--title-text-color);
+    font-family: inherit;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
@@ -158,7 +160,7 @@ font-family: Roboto, sans-serif;
 .button-secondary:hover,
 .button-secondary:focus {
     background-color: #2196F3;
-    color: #FFFFFF;
+    color: var(--button-accent-color);
 }
 
 .project-title {color: var(--title-text-color);
@@ -174,4 +176,8 @@ font-family: Roboto, sans-serif;
         line-height: 1.9;
         letter-spacing: 0.03em;
    
+}
+
+.project-link {
+    text-decoration: none;
 }
